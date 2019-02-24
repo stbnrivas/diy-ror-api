@@ -6,39 +6,34 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-sandi_metz = Author.create([name: 'Sandi', surname: 'Metz', slug: 'sandi-metz'])
-katrina_owen = Author.create([name: 'Katrina', surname: 'Owen', slug: 'katrina-owen'])
-sam_ruby = Author.create([name: 'Sam', surname: 'Ruby', slug: 'sam-ruby'])
-rob_isenberg = Author.create([name: 'Rob', surname: 'Isenberg',slug: 'rob-isenberg'])
+sandi_metz = Author.create(name: 'Sandi', surname: 'Metz', slug: 'sandi-metz')
+katrina_owen = Author.create(name: 'Katrina', surname: 'Owen', slug: 'katrina-owen')
+sam_ruby = Author.create(name: 'Sam', surname: 'Ruby', slug: 'sam-ruby')
+rob_isenberg = Author.create(name: 'Rob', surname: 'Isenberg',slug: 'rob-isenberg')
+rob_isenberg.save
 
-agile_web_development_with_rails51 = Book.create(
-  [
-    title: 'Agile web development with rails 5.1',
-    brief: 'a classic book to start with rails, published for every major rails version...',
-    slug: 'agile-web-development-with-rails-5-1:'
-  ]
-)
-
-bottles_of_OOP = Book.create(
-  [
+bottles_of_oop = Book.create(
     title: '99 Bottles of OOP',
     brief: 'a book for improve your ruby skill, of brilliant Katrina owen and Sandi Metz',
-    slug: '99-bottles-of-oop',
-  ]
-)
+    slug: '99-bottles-of-oop')
+
+agile_web_development_with_rails51 = Book.create(
+    title: 'Agile web development with rails 5.1',
+    brief: 'a classic book to start with rails, published for every major rails version...',
+    slug: 'agile-web-development-with-rails-5-1:')
 
 practical_object_oriented_design_in_ruby = Book.create(
-  [
     title: 'Practical object-oriented design in ruby',
     brief: 'Meticulously pragmatic and exquisitely articulate, POODiR make otherwise elusice knowledge available',
-    slug: 'practical-object-oriented-design-in-ruby',
-  ]
-)
+    slug: 'practical-object-oriented-design-in-ruby')
 
 docker_for_rails_developer = Book.create(
-  [
     title: 'Docker for rails developer',
     brief: 'build, ship and run your application everywhere',
-    slug: 'docker-for-rails-developers'
-  ]
-)
+    slug: 'docker-for-rails-developers')
+
+bottles_of_oop.authors << sandi_metz
+bottles_of_oop.authors << katrina_owen
+agile_web_development_with_rails51.authors << sam_ruby
+practical_object_oriented_design_in_ruby.authors << sandi_metz
+docker_for_rails_developer.authors << rob_isenberg
