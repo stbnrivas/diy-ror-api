@@ -2,8 +2,11 @@
 Rails.application.routes.draw do
   namespace :api do
     namespace :v1 do
-      resources :authors
+      resources :authors do
+        resources :books, only: [:index]
+      end
       resources :books do
+        resources :authors, only: [:index]
         resources :comments, only: [:index, :create]
       end
     end

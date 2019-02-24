@@ -4,7 +4,13 @@ class Api::V1::AuthorsController < ApplicationController
   skip_before_action :verify_authenticity_token
 
   def index
-    @authors = Author.all
+    unless params[:book_id].nil?
+      @book = Book.find_by(id: params[:book_id])
+      @book ||= Book.find_by(slug: params[:book_id])
+      @authors = @book.authors
+    else
+      @authors = Author.all
+    end
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @authors, status: 200 }
