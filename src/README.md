@@ -36,3 +36,11 @@ gem 'active_model_serializers'
 skip_before_action :verify_authenticity_token
 ```
 * add test for api/v1/authors_controller.rb
+
+
+* at api/v1/books_controller.rb remove
+
+```ruby
+skip_before_action :verify_authenticity_token
+```
+* add test for api/v1/books_controller.rb
