@@ -19,6 +19,7 @@ class Api::V1::AuthorsController < ApplicationController
 
   def show
     @author = Author.find_by(slug: params[:id])
+    @author = Author.find params[:id] if @author.nil?
     respond_to do |format|
       format.html # show.html.erb
       format.json { render json: @author, status: 200 }
