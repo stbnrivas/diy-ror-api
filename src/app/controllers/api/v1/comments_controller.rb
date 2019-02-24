@@ -5,6 +5,10 @@ class Api::V1::CommentsController < ApplicationController
 
   def index
     @comments = Comment.where("book_id = ?",params[:book_id])
+    if @comments.size == 0
+      @book = Book.find_by(slug: params[:book_id])
+      @comments = Comment.where("book_id = ?",@book.id)
+    end
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @comments, status: 200 }
