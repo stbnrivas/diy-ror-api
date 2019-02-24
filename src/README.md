@@ -1,13 +1,8 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## installation
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
+* Ruby version 2.5.3
 
 * Configuration
 
@@ -21,4 +16,23 @@ Things you may want to cover:
 
 * Deployment instructions
 
-* ...
+
+
+## System dependencies (gems)
+
+
+for api part add dependency to
+
+```ruby
+gem 'active_model_serializers'
+```
+
+
+## TODO
+
+* at api/v1/authors_controller.rb remove
+
+```ruby
+skip_before_action :verify_authenticity_token
+```
+* add test for api/v1/authors_controller.rb
