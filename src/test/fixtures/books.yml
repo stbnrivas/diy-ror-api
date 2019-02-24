@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+agile-web-development-with-rails-5-1:
+  title: 'Agile web development with rails 5.1'
+  brief: 'a classic book to start with rails, published for every major rails version...'
+  slug: 'agile-web-development-with-rails-5-1:'
+
+99bottlesOOP:
+  title: '99 Bottles of OOP'
+  brief: 'a book for improve your ruby skill, of brilliant Katrina owen and Sandi Metz'
+  slug: 99-bottles-of-oop
+
+practical-object-oriented-design-in-ruby:
+  title: 'Practical object-oriented design in ruby'
+  brief: 'Meticulously pragmatic and exquisitely articulate, POODiR make otherwise elusice knowledge available'
+  slug: 'practical-object-oriented-design-in-ruby'
+
+docker-for-rails-developer:
+  title: 'Docker for rails developer'
+  brief: 'build, ship and run your application everywhere'
+  slug: 'docker-for-rails-developers'
