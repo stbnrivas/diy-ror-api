@@ -1,0 +1,21 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+sandi_metz:
+  name: Sandi
+  surname: Metz
+  slug: sandi-metz
+
+katrina_owen:
+  name: Katrina
+  surname: Owen
+  slug: katrina-owen
+
+sam_ruby:
+  name: Sam
+  surname: Ruby
+  slug: sam-ruby
+
+rob_isenberg:
+  name: Rob
+  surname: Isenberg
+  slug: rob-isenberg
