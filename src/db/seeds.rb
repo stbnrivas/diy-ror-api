@@ -37,3 +37,13 @@ bottles_of_oop.authors << katrina_owen
 agile_web_development_with_rails51.authors << sam_ruby
 practical_object_oriented_design_in_ruby.authors << sandi_metz
 docker_for_rails_developer.authors << rob_isenberg
+
+bottle_oop_comment_0 = Comment.create(
+  book: bottles_of_oop,
+  content: 'you can abstract a lyrics for this song without make a mess')
+bottle_oop_comment_1 = Comment.create(
+  book: bottles_of_oop,
+  content: 'it sounds easy... why not')
+bottle_oop_comment_2 = Comment.create(
+  book: bottles_of_oop,
+  content: 'ok, show me the code...')
