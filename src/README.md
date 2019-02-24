@@ -50,3 +50,5 @@ skip_before_action :verify_authenticity_token
 * add test for api/v1/books_controller.rb
 
 * add pagination to comments maybe gem kaminari
+
+* add test for controller front#index
