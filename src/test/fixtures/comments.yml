@@ -1,0 +1,16 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+bottle_oop_comment_0:
+  book: 99bottlesOOP
+  content: 'you can abstract a lyrics for this song without make a mess'
+  made_by: nil
+
+bottle_oop_comment_1:
+  book: 99bottlesOOP
+  content: 'it sounds easy... why not'
+  made_by: nil
+
+bottle_oop_comment_1:
+  book: 99bottlesOOP
+  content: 'ok, show me the code...'
+  made_by: nil
