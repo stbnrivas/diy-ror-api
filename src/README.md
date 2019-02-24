@@ -16,7 +16,11 @@
 
 * Deployment instructions
 
+because rails structure is into subfolder 'src' you need deploy in heroku this way
 
+```bash
+git subtree push --prefix src heroku master
+```
 
 ## System dependencies (gems)
 
